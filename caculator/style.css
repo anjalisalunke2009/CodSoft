@@ -1,0 +1,122 @@
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3b3a4f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  animation: fadeIn 1.5s ease;
+}
+
+/* Intro text styling */
+.text-section {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.text-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.text-section p {
+  font-size: 1.8rem;
+  color: #b5b5b5;
+  margin: 5px 0 30px;
+}
+
+/* Calculator container */
+.calculator {
+  background-color: #2e2d3a;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  animation: scaleIn 1s ease-in-out;
+}
+
+/* Display screen */
+.display {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  text-align: right;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Button grid layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 15px;
+}
+
+/* General button styles */
+button {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #2a2935;
+  cursor: pointer;
+  box-shadow: inset -4px -4px 8px #383759, inset 4px 4px 8px #1e1d2b;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Hover effect for all buttons */
+button:hover {
+  background-color: #383759;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Operator styling */
+.operator {
+  color: #30f5c9;
+}
+
+/* Equals button specific styling */
+.equals {
+  background-color: #30f5c9;
+  color: #000;
+}
+
+.equals:hover {
+  background-color: #24d3a8;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
