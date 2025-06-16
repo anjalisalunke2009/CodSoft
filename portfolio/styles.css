@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ec4899;
+}
+
+nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ec4899;
+}
+
+.section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+
+
+.hero {
+  background-color: #111;
+}
+
+.highlight {
+  color: #ec4899;
+}
+
+.divider {
+  width: 60px;
+  height: 4px;
+  background-color: #ef4444;
+  margin: 10px auto 20px;
+}
+
+button {
+  background-color: #ec4899;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #d9468b;
+}
+
+.skills-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto 0;
+}
+
+@media (min-width: 768px) {
+  .skills-grid, .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(236, 72, 153, 0.2);
+}
+
+form {
+  display: grid;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #555;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #ec4899;
+}
+.hero {
+  background-color: #111;
+  padding: 80px 40px;
+}
+
+.anjali-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;  
+}
+
+.anjali-text {
+  text-align: center;
+}
+
+.anjali-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.anjali-image-circle {
+  background-color: #fff;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 380px;
+  height: 380px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anjali-image-circle img {
+  width: 150%;
+  height: 150%;
+  object-fit: cover;
+}
+
+button.outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #ec4899;
+}
+
+button.outline:hover {
+  background: #ec4899;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .anjali-container {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .anjali-text {
+    flex: 1;
+  }
+
+  .anjali-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .anjali-image img {
+    max-width: 400px;
+  }
+}
+
+
+
